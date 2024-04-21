@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+      .button-container {  
+      font-size: 16px;
+      width: 100%;
+      margin-top: 8%;
+      transition: border-color 0.3s ease;
+      color: #555; /* Dark gray text color */
+      }
+
+      .button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #9a5577;
+      color: white;
+      border: 5px solid black;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+      background-color: #881b51;
+      border: 5px solid black;
+      }
+
+      img{
+        transition: transform .7s ease-in-out;
+        padding-top: 50px;
+      }
+      img:hover {
+        transform: rotate(360deg);
+      }
+
+
+    </style>
+</head>
+<body class="class-for-dashboard">
+
+    <p class="game_name">Game: {{ game_name }}</p>
+
+    <div class="sentiment-result">
+        {% if sentiment_label == 'Positive' %}
+            <span>Yes, we certainly recommend buying this!</span><br>
+            <img src="static/green.png" height="200px" width="250px">
+        {% else %}
+            <span>We think you can hold on for a while before deciding on buying this.</span><br>
+            <img src="static/red.png" height="200px" width="250px">
+        {% endif %}
+        <br>
+        <!--Sentiment Probabilities: {{ sentiment_probs }}-->
+    </div>
+    <div class="button-container">
+        <a href="{{ url_for('input_game') }}" class="button">Take me back!</a>
+    </div>
+</body>
+</html>

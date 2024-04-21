@@ -1,0 +1,51 @@
+.class-for-input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  text-align: center;
+  background-color: #dbdbdb;
+  color: #333; /* Dark gray text color */
+}
+h1.class-for-input {
+    margin-bottom: 10px;
+    color: #333; /* Dark gray text color */
+}
+h2.class-for-input {
+    color: #333; /* Dark gray text color */
+}
+form.class-for-input {
+      max-width: 500px;
+      margin: auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+}
+.card{
+  width: 400px;
+  height: 350px;
+  background: url(static/controller.png) no-repeat;
+  display: inline-block;
+}
+.card:hover {
+  background: url(static/controller2.png) no-repeat;
+}
+.class-for-dashboard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  text-align: center;
+  background-color: #dbdbdb;
+  color: #333; /* Dark gray text color */
+}
+.game_name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px;
+}
+.sentiment-result {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

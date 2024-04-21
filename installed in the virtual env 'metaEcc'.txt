@@ -1,0 +1,16 @@
+flask
+torch
+requests
+transformers
+
+
+giantbomb api key (for coverart):
+0e526d0dedd4f515950ccd886b16cdedf8f48d80
+
+https://www.giantbomb.com/api/search/?api_key=0e526d0dedd4f515950ccd886b16cdedf8f48d80&format=json&resources=game&query=uncharted4&field&limit=1
+
+
+https://www.giantbomb.com/api/images/[guid]/?api_key=0e526d0dedd4f515950ccd886b16cdedf8f48d80&format=json&field=original_url&limit=1
+
+
+https://www.giantbomb.com/api/games/?api_key=0e526d0dedd4f515950ccd886b16cdedf8f48d80&format=json&field_list=game,image&field=original_url&limit=1
