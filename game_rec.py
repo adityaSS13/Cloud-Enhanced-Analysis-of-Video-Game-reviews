@@ -12,7 +12,7 @@ def input_game():
         review_data = scrape_game_reviews(url)
         sentiment_label, sentiment_probs = analyze_sentiment(review_data)
         return redirect(url_for('dashboard', game_name=game_name, sentiment_label=sentiment_label, sentiment_probs=sentiment_probs))
-    return render_template('input.html')
+    return render_template('index.html')
 
 @app.route('/dashboard', methods=['GET'])
 def dashboard():
